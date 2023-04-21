@@ -42,6 +42,7 @@ const App = ({ signOut }) => {
 
   async function createNote(event) {
     event.preventDefault();
+    console.log("dd");
     const form = new FormData(event.target);
     const image = form.get("image");
     const data = {
@@ -89,12 +90,18 @@ const App = ({ signOut }) => {
             variation="quiet"
             required
           />
+          <View
+            name="image"
+            as="input"
+            type="file"
+            style={{ alignSelf: "end" }}
+          />
+
           <Button type="submit" variation="primary">
             Create Note
           </Button>
         </Flex>
       </View>
-      <View name="image" as="input" type="file" style={{ alignSelf: "end" }} />
       <Heading level={2}>Current Notes</Heading>
       <View margin="3rem 0">
         {notes.map((note) => (
@@ -112,7 +119,7 @@ const App = ({ signOut }) => {
               <Image
                 src={note.image}
                 alt={`visual aid for ${notes.name}`}
-                style={{ width: 400 }}
+                style={{ width: 40 }}
               />
             )}
             <Button variation="link" onClick={() => deleteNote(note)}>
