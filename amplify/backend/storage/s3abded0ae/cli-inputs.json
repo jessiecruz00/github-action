@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3abded0ae",
+  "policyUUID": "abded0ae",
+  "bucketName": "githubaction93d3208bb7c843838eede7fd9a5d0ad8",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Trigger6aaed96e",
+  "groupAccess": {}
+}

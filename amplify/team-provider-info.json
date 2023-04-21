@@ -14,6 +14,18 @@
     "categories": {
       "auth": {
         "githubactionb17bbceb": {}
+      },
+      "api": {
+        "githubaction": {}
+      },
+      "function": {
+        "S3Trigger6aaed96e": {
+          "deploymentBucketName": "amplify-amplify2591b29952f94-staging-65128-deployment",
+          "s3Key": "amplify-builds/S3Trigger6aaed96e-3353615a6e7776554135-build.zip"
+        }
+      },
+      "storage": {
+        "s3abded0ae": {}
       }
     }
   }
